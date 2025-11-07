@@ -33,6 +33,15 @@ Follow the steps below to set up and run BioAmp Filter Designer locally:
 git clone https://github.com/upsidedownlabs/BioAmp-Filter-Designer.git
 ```
 
+### Download as ZIP (alternative)
+
+You can also download the repository as a ZIP file from GitHub:
+
+- Open the repository page on GitHub in your browser.
+- Click the "Code" button and choose "Download ZIP".
+
+After downloading, extract the ZIP and open the extracted folder to continue with the steps below.
+
 ### 2. Open the Project Directory
 
 Navigate into the repository folder. For example:
@@ -43,7 +52,24 @@ cd BioAmp-Filter-Designer
 
 If your downloaded folder has spaces or extra text (for example `BioAmp-Filter-Designer-main (1)`), make sure to navigate into the correct folder path.
 
-### 3. Create a Virtual Environment
+From File Explorer (external PowerShell)
+
+Open File Explorer, navigate to the project folder (`d:\bio-amp\BioAmp-Filter-Designer`).
+Right-click the folder background and choose "Open in Terminal" or "Open PowerShell window here".
+
+Commands to run (PowerShell)
+
+```powershell
+cd 'd:\bio-amp\BioAmp-Filter-Designer'
+
+# Confirm Python is available:
+python --version
+pip --version
+
+
+ ```
+
+ ### 3. Create a Virtual Environment
 
 Creating a virtual environment ensures dependencies are isolated from your system Python:
 
@@ -53,13 +79,13 @@ python -m venv .venv
 
 This creates a folder named `.venv` containing a clean Python environment.
 
+
 ### 4. Activate the Virtual Environment
 
 On Windows (PowerShell):
 
 ```powershell
 .venv\Scripts\activate
-
 ```
 
 On macOS / Linux:
@@ -94,7 +120,7 @@ This launches the BioAmp Filter Designer GUI and you can start designing filters
 
 - Select Filter Type — Choose between Low-pass, High-pass, Band-pass, or Band-stop filters.
 - Adjust Parameters — Set the cutoff frequency, sampling rate, and filter order.
-- File will be generated with in the folder of project.
+- Generated files will be saved in the project folder.
 
 ---
 
